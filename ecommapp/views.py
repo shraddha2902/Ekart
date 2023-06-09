@@ -344,7 +344,7 @@ def placeorder(request):
 
 def makepayment(request):
     userid=request.user.id
-    client = razorpay.Client(auth=("rzp_test_eYcKvOG9HJt3uA", "YRZitM2k5MheYNtQGQrTL3lE"))
+    client = razorpay.Client(auth=("rzp_test_gbyB82ghkyZT1k", "dlVi7mneKiix5IJxtt9jvVZs"))
     o=Order.objects.filter(uid=userid)
     sum=0
     oid=str(o[0].id)
